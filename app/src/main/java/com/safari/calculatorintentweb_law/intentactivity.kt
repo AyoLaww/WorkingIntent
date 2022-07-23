@@ -65,7 +65,7 @@ class intentactivity : AppCompatActivity() {
 
         buttonCall.setOnClickListener {
 
-            val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "+918511812660"))
+            val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "+254720969239"))
 
             if (ContextCompat.checkSelfPermission(
                     this@intentactivity,

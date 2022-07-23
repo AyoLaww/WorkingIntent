@@ -32,7 +32,11 @@ class calculatoractivity : AppCompatActivity() {
         btn_add!!.setOnClickListener {
             var firstnum = edt_fnum?.text.toString()
             var secondnum = edt_snum?.text.toString()
-            if (firstnum.isEmpty() && secondnum.isEmpty()){
+            if(firstnum.isEmpty()){
+                txt_ans.text = "please input the first number!"
+            }else if (secondnum.isEmpty()){
+                txt_ans.text = "please input the second number!"
+            }else if (firstnum.isEmpty() && secondnum.isEmpty()){
                 txt_ans.text = "Please input some numbers!"
             }else{
                 var ans = firstnum.toDouble() + secondnum.toDouble()
@@ -45,42 +49,51 @@ class calculatoractivity : AppCompatActivity() {
         btn_sub!!.setOnClickListener {
             var firstnum = edt_fnum?.text.toString()
             var secondnum = edt_snum?.text.toString()
-            if (firstnum.isEmpty() && secondnum.isEmpty()){
+            if(firstnum.isEmpty()){
+                txt_ans.text = "please input the first number!"
+            }else if (secondnum.isEmpty()){
+                txt_ans.text = "please input the second number!"
+            }else if (firstnum.isEmpty() && secondnum.isEmpty()){
                 txt_ans.text = "Please input some numbers!"
             }else{
                 var ans = firstnum.toDouble() - secondnum.toDouble()
 
                 txt_ans.text = ans.toString()
             }
-
         }
 
         btn_divi = findViewById(R.id.btn_div)
         btn_divi!!.setOnClickListener {
             var firstnum = edt_fnum?.text.toString()
             var secondnum = edt_snum?.text.toString()
-            if (firstnum.isEmpty() && secondnum.isEmpty()){
+            if(firstnum.isEmpty()){
+                txt_ans.text = "please input the first number!"
+            }else if (secondnum.isEmpty()){
+                txt_ans.text = "please input the second number!"
+            }else if (firstnum.isEmpty() && secondnum.isEmpty()){
                 txt_ans.text = "Please input some numbers!"
             }else{
                 var ans = firstnum.toDouble() / secondnum.toDouble()
 
                 txt_ans.text = ans.toString()
             }
-
         }
 
         btn_multi = findViewById(R.id.btn_mult)
         btn_multi!!.setOnClickListener {
             var firstnum = edt_fnum?.text.toString()
             var secondnum = edt_snum?.text.toString()
-            if (firstnum.isEmpty() && secondnum.isEmpty()){
+            if(firstnum.isEmpty()){
+                txt_ans.text = "please input the first number!"
+            }else if (secondnum.isEmpty()){
+                txt_ans.text = "please input the second number!"
+            }else if (firstnum.isEmpty() && secondnum.isEmpty()){
                 txt_ans.text = "Please input some numbers!"
             }else{
                 var ans = firstnum.toDouble() * secondnum.toDouble()
 
                 txt_ans.text = ans.toString()
             }
-
         }
     }
 }
